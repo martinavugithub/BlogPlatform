@@ -1,0 +1,29 @@
+.header {
+    background-color: #fff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    
+  }
+
+.brand {
+    padding: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+.addButton {
+    font-size: 20px;
+    padding: 10px;
+    background-color: green;
+    color: #fff;
+    border: 10px sold black;
+    cursor: pointer;
+  }
+  
+.addButton:hover {
+    background-color: darkgreen;
+  }

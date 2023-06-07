@@ -1,0 +1,49 @@
+
+.main {
+  background-color:white;
+  padding: 80px 0;
+  text-align: center;
+}
+.blogRow {
+ 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.blogColumn {
+  flex: 0 0 31%;
+  margin-bottom: 30px;
+  background-color:lightsteelblue;
+}
+.heading {
+  margin-bottom: 50px;
+}
+
+.postCard {
+  border: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.postCard:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.postCardBody {
+  padding: 20px;
+  align-items: center;
+}
+
+.postTitle {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.postContent {
+  margin-bottom: 20px;
+  padding: 10px;
+  text-align: justify;
+}
+
