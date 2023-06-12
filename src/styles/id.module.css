@@ -1,0 +1,19 @@
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .h1 {
+    font-size: 36px;
+    padding: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    border: 2px solid black;
+  }
+  
+  .p {
+    line-height: 1.5;
+    font-size: 18px;
+    text-align: justify;
+  }
+  

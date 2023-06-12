@@ -8,7 +8,7 @@ const Header = () => {
         <Link href="/">
           <span className={`${styles.brand} navbar-brand`}>My Blog</span>
         </Link>
-        <Link href="/new-post">
+        <Link href="/newpost">
           <button className={`${styles.addButton} btn btn-outline-success`} type="button">
             Add new blog
           </button>
@@ -19,4 +19,5 @@ const Header = () => {
 };
 
 export default Header;
+
 
