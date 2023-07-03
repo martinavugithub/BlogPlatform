@@ -1,5 +1,5 @@
 import React from "react";
-import blogPosts from "../data/api/blog";
+import blogService from "../../services/blog";
 import styles from '../../styles/id.module.css';
 
 const BlogPage = ({ post }) => {
@@ -13,7 +13,7 @@ const BlogPage = ({ post }) => {
 
 export async function getStaticPaths() {
  
-  const paths = blogPosts.map((post) => ({
+  const paths = blogService.getPosts().map((post) => ({
     params: { id: post.id.toString() },
   }));
 
@@ -26,7 +26,7 @@ export async function getStaticPaths() {
 export async function getStaticProps({ params }) {
 
   const postId = parseInt(params.id, 10);
-  const post = blogPosts.find((post) => post.id === postId);
+  const post = blogService.getPosts().find((post) => post.id === postId);
 
   return {
     props: {
